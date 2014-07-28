@@ -25,7 +25,6 @@ class Board: NSObject {
             }
             squares.append(squareRow)
         }
-        
     }
     
     func resetBoard() {

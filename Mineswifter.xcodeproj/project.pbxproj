@@ -14,6 +14,7 @@
 		5D9EEA4A198473C5001BFDBD /* MineswifterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9EEA49198473C5001BFDBD /* MineswifterTests.swift */; };
 		5DEEA0F91984A09000F3B996 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEEA0F81984A09000F3B996 /* Square.swift */; };
 		5DEEA0FB1984BC5F00F3B996 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEEA0FA1984BC5F00F3B996 /* Board.swift */; };
+		5DEEA0FF19857D3600F3B996 /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEEA0FE19857D3600F3B996 /* SquareButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		5D9EEA49198473C5001BFDBD /* MineswifterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineswifterTests.swift; sourceTree = "<group>"; };
 		5DEEA0F81984A09000F3B996 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
 		5DEEA0FA1984BC5F00F3B996 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		5DEEA0FE19857D3600F3B996 /* SquareButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				5D9EEA36198473C5001BFDBD /* AppDelegate.swift */,
 				5D9EEA38198473C5001BFDBD /* ViewController.swift */,
+				5DEEA0FE19857D3600F3B996 /* SquareButton.swift */,
 				5DEEA0F81984A09000F3B996 /* Square.swift */,
 				5DEEA0FA1984BC5F00F3B996 /* Board.swift */,
 				5D9EEA3A198473C5001BFDBD /* Main.storyboard */,
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DEEA0FF19857D3600F3B996 /* SquareButton.swift in Sources */,
 				5DEEA0F91984A09000F3B996 /* Square.swift in Sources */,
 				5D9EEA39198473C5001BFDBD /* ViewController.swift in Sources */,
 				5DEEA0FB1984BC5F00F3B996 /* Board.swift in Sources */,
