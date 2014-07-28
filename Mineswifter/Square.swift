@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Square : NSObject {
+class Square {
     
     let row:Int
     let col:Int
@@ -20,8 +20,6 @@ class Square : NSObject {
     init(row:Int, col:Int) {
         //store the row and column of the square in the grid
         self.row = row
-        self.col = col
-        
-        super.init()
+        self.col = col        
     }
 } 

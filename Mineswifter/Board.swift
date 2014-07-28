@@ -8,14 +8,13 @@
 
 import Foundation
 
-class Board: NSObject {
+class Board {
     
     let size:Int
     var squares:[[Square]] = [] // a 2d array of square cells, indexed by [row][column]
     
     init(size:Int) {
         self.size = size
-        super.init()
         
         for row in 0 ..< size {
             var squareRow:[Square] = []

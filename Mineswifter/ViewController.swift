@@ -98,6 +98,7 @@ class ViewController: UIViewController {
     
     @IBAction func newGamePressed() {
         println("new game")
+        self.endCurrentGame()
         self.startNewGame()
     }
     
@@ -117,6 +118,7 @@ class ViewController: UIViewController {
     }
     
     func minePressed() {
+        self.endCurrentGame()
         // show an alert when you tap on a mine
         var alertView = UIAlertView()
         alertView.addButtonWithTitle("New Game")
@@ -129,6 +131,11 @@ class ViewController: UIViewController {
     func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
         //start new game when the alert is dismissed
         self.startNewGame()
+    }
+    
+    func endCurrentGame() {
+        self.oneSecondTimer!.invalidate()
+        self.oneSecondTimer = nil
     }
 
 
