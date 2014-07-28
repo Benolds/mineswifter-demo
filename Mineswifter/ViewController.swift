@@ -18,6 +18,20 @@ class ViewController: UIViewController {
     var board:Board
     var squareButtons:[SquareButton] = []
     
+    var moves:Int = 0 {
+        didSet {
+            self.movesLabel.text = "Moves: \(moves)"
+            self.movesLabel.sizeToFit()
+        }
+    }
+    var timeTaken:Int = 0  {
+        didSet {
+            self.timeLabel.text = "Time: \(timeTaken)"
+            self.timeLabel.sizeToFit()
+        }
+    }
+    var oneSecondTimer:NSTimer?
+    
 //MARK: Initialization
     
     init(coder aDecoder: NSCoder!)
@@ -54,11 +68,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func startNewGame() {
-        //start new game
-        self.resetBoard()
-    }
-    
     func resetBoard() {
         // resets the board with new mine locations & sets isRevealed to false for each square
         self.board.resetBoard()
@@ -66,6 +75,18 @@ class ViewController: UIViewController {
         for squareButton in self.squareButtons {
             squareButton.setTitle("[x]", forState: .Normal)
         }
+    }
+    
+    func startNewGame() {
+        //start new game
+        self.resetBoard()
+        self.timeTaken = 0
+        self.moves = 0
+        self.oneSecondTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("oneSecond"), userInfo: nil, repeats: true)
+    }
+    
+    func oneSecond() {
+        self.timeTaken++
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,6 +108,7 @@ class ViewController: UIViewController {
         if !sender.square.isRevealed {
             sender.square.isRevealed = true
             sender.setTitle("\(sender.getLabelText())", forState: .Normal)
+            self.moves++
         }
         
         if sender.square.isMineLocation {

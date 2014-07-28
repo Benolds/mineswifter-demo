@@ -24,7 +24,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7E8-Gq-bQw">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7E8-Gq-bQw">
                                 <rect key="frame" x="236" y="417" width="57" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -54,8 +54,8 @@
                     </view>
                     <connections>
                         <outlet property="boardView" destination="Q0S-Jx-MHD" id="bJF-ec-pI1"/>
-                        <outlet property="movesLabel" destination="0PX-91-AZc" id="57J-sj-wK5"/>
-                        <outlet property="timeLabel" destination="7E8-Gq-bQw" id="mLg-90-oBU"/>
+                        <outlet property="movesLabel" destination="0PX-91-AZc" id="fHD-NT-7tb"/>
+                        <outlet property="timeLabel" destination="7E8-Gq-bQw" id="YBN-tt-gea"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
